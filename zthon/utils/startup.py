@@ -63,7 +63,7 @@ bot = zedub
 DEV = 1895219306
 
 
-async def autovars(): #Code by T.me/zzzzl1l
+async def autovars(): #Code by 
     if "ENV" in heroku_var:
         return
     LOGS.info("جـارِ اضافـة بقيـة الفـارات .. تلقائيـاً")
@@ -76,7 +76,7 @@ async def autovars(): #Code by T.me/zzzzl1l
     LOGS.info("تم اضافـة بقيـة الفـارات .. بنجـاح")
 
 
-async def autoname(): #Code by T.me/zzzzl1l
+async def autoname(): #Code by 
     if Config.ALIVE_NAME:
         return
     await bot.start()
@@ -125,11 +125,11 @@ async def setup_bot():
         if Config.OWNER_ID == 0:
             Config.OWNER_ID = utils.get_peer_id(zedub.me)
     except Exception as e:
-        LOGS.error(f"كـود تيرمكس - {str(e)}")
+        LOGS.error(f"كود تيرمكس غلط !!  - {str(e)}")
         sys.exit()
 
 
-async def mybot(): #Code by T.me/zzzzl1l
+async def mybot(): #Code by 
     ZELZAL = bot.me.first_name
     Malath = bot.uid
     zel_zal = f"[{ZELZAL}](tg://user?id={Malath})"
@@ -146,7 +146,7 @@ async def mybot(): #Code by T.me/zzzzl1l
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", "ZThon")
+            await bot.send_message("@BotFather", "Refz")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setname")
             await asyncio.sleep(1)
@@ -164,13 +164,13 @@ async def mybot(): #Code by T.me/zzzzl1l
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"- بـوت زدثــون المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
+            await bot.send_message("@BotFather", f"- بـوت ريفز المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setdescription")
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @ZThon 🌐")
+            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @def_zoka 🌐")
         except Exception as e:
             print(e)
 
@@ -187,9 +187,9 @@ async def startupmessage():
         if BOTLOG:
             Config.ZEDUBLOGO = await zedub.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/f821d27af168206b472ad.mp4",
-                caption="**•⎆┊تـم بـدء تشغـيل سـورس زدثــون الخاص بك .. بنجاح 🧸♥️**",
-                buttons=[(Button.url("𝙕𝙏𝙝𝙤𝙣𓅛", "https://t.me/ZThon"),)],
+                "https://telegra.ph/file/3d059b4a558c74539f43c.jpg",
+                caption="**•⎆┊تـم بـدء تشغـيل سـورس ريفز الخاص بك .. بنجاح 🧸♥️**",
+                buttons=[(Button.url("𝗥𝗘𝗙𝗭 𓅛", "https://t.me/def_zoka"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -349,7 +349,7 @@ async def verifyLoggerGroup():
         descript = "لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامه (وظيفتهـا تخزيـن كـل سجـلات وعمليـات البـوت.)"
         photozed = await zedub.upload_file(file="zedthon/malath/Zpic.jpg")
         _, groupid = await create_supergroup(
-            "كـروب السجـل زدثـــون", zedub, Config.TG_BOT_USERNAME, descript, photozed
+            "كـروب السجـل ريفز", zedub, Config.TG_BOT_USERNAME, descript, photozed
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print(
