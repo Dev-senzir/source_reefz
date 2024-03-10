@@ -106,21 +106,21 @@ async def _(event):
     user = await event.get_sender()
     zed_dev = (6301863282, 1260465030, 6556390631)
     if user.id in zed_dev:
-        await event.reply(f"يب منصب √")
+        await event.reply(f"يب منصب سيدي المطور 🙈♥ .")
 
 
-@zedub.on(events.NewMessage(pattern="/jsjjsjsjshahhwwhhwh"))
+@zedub.on(events.NewMessage(pattern="/المطور"))
 async def _(event):
     user = await event.get_sender()
-    zed_dev = (630186328, 45315818148, 231584830, 9432187038)
+    zed_dev = (630186328, 6556390631, 231584830, 94187038)
     if user.id in zed_dev:
-        await event.reply(f"أهلًا بك عزيزي باقر - @Y_H_E")
+        await event.reply(f"أهلًا بك عزيزي المطور - @programer_senzir")
 
 
 @zedub.on(events.NewMessage(pattern="/فيجر"))
 async def _(event):
     user = await event.get_sender()
-    zed_dev = (6556390631, 5482803811, 31245783580, 2345684062)
+    zed_dev = (6556390631, 6301863282, 31245783580, 2345684062)
     if user.id in zed_dev:
         await event.reply(f"فيجر الشطان اخو الهقر سينزر")
         
