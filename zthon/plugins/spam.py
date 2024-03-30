@@ -5,7 +5,7 @@ from telethon import functions, types
 from . import *
 
 
-@hell_cmd(pattern="اسبام(?:\s|$)([\s\S]*)")
+@zthon(pattern="اسبام(?:\s|$)([\s\S]*)")
 async def spammer(event):
     lg_id = Config.LOGGER_ID
     msg_ = event.text[6:]
@@ -21,7 +21,7 @@ async def spammer(event):
     await event.client.send_message(lg_id, f"#SPAM \n\nSpammed  `{counter}`  messages!!")
 
 
-@hell_cmd(pattern="bigspam(?:\s|$)([\s\S]*)")
+@zthon(pattern="bigspam(?:\s|$)([\s\S]*)")
 async def bigspam(event):
     lg_id = Config.LOGGER_ID
     msg_ = event.text[9:]
@@ -37,7 +37,7 @@ async def bigspam(event):
     await event.client.send_message(lg_id, f"#BIGSPAM \n\nBigspammed  `{hell_count}`  messages !!")
 
 
-@hell_cmd(pattern="dspam(?:\s|$)([\s\S]*)")
+@zthon(pattern="dspam(?:\s|$)([\s\S]*)")
 async def spammer(event):
     lg_id = Config.LOGGER_ID
     input_str = "".join(event.text.split(maxsplit=1)[1:])
@@ -51,7 +51,7 @@ async def spammer(event):
     await event.client.send_message(lg_id, f"#DELAYSPAM \n\nSpammed `{counter}`  messages with delay of `{spamDelay}` seconds!!")
 
 
-@hell_cmd(pattern="uspam(?:\s|$)([\s\S]*)")
+@zthon(pattern="uspam(?:\s|$)([\s\S]*)")
 async def _(event):
     lg_id = Config.LOGGER_ID
     reply_msg = await event.get_reply_message()
@@ -111,7 +111,7 @@ async def tiny_pic_spam(event):
     await event.delete()
 
 
-CmdHelp("spam").add_command(
+CmdHelp("اسبام").add_command(
   "spam", "<number> <text>", "Sends the text 'X' number of times.", "spam 99 Hello"
 ).add_command(
   "mspam", "<reply to media> <number>", "Sends the replied media (gif/ video/ sticker/ pic) 'X' number of times", "mspam 100 <reply to media>"
