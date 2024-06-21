@@ -1,5 +1,5 @@
 databases:
-  - name: seenzir
+  - name: hussein
     ipAllowList: []
     region: frankfurt
     plan: free
