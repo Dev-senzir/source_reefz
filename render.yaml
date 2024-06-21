@@ -1,15 +1,15 @@
 databases:
-  - name: hussein
+  - name: seenzir
     ipAllowList: []
     region: frankfurt
     plan: free
 services:
   - type: web
-    name: Aljoker
+    name: refz
     plan: free
     env: python
     buildCommand: pip install -U -r requirements.txt
-    startCommand: python3 ser.py & python3 -m JoKeRUB
+    startCommand: python3 ser.py & python3 -m zthon
     region: frankfurt
     envVars:
       - key: ALIVE_NAME
